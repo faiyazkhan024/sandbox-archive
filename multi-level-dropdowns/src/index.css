@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primary-300: #e7cdff;
+  --primary: #e8a6fe;
+  --primary-500: #e8a6fe;
+  --primary-700: #ebafff;
+  --primary-900: #daf;
+  --secondary-100: white;
+  --secondary-300: #ccc;
+  --secondary: grey;
+  --secondary-700: #333;
+  --accent: cornflowerblue;
+  --arrow-down: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
 
 * {
   margin: 0;
@@ -7,5 +19,6 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--primary-300);
 }
