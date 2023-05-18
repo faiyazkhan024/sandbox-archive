@@ -12,7 +12,7 @@ const App = () => {
       <AppBar />
       <main className={classes.appMain}>
         <Form dropdowns={DROPDOWN_MENU} />
-        <Menu />
+        <Menu menu={DROPDOWN_MENU} />
       </main>
     </>
   );

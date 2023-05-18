@@ -55,7 +55,7 @@ const DROPDOWN_MENU: Array<MultiLevelDropdown> = [
       },
     ],
   },
-  { id: v4(), name: "About" },
+  { id: v4(), name: "About Us" },
   {
     id: v4(),
     name: "Right Dropdown",
