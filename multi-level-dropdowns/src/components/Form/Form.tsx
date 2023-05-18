@@ -1,32 +1,21 @@
-import { Fragment, FC, FormHTMLAttributes } from "react";
+import { FC, FormHTMLAttributes } from "react";
 
+import Options from "./Options";
 import Input from "../core/Input";
 import Select from "../core/Select";
 import Button from "../core/Button";
 
+import DROPDOWN_MENU from "../../data/dropdownMenu";
+
 import classes from "./Form.module.css";
 
-interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
-  dropdowns: Array<MultiLevelDropdown>;
-}
+type FormProps = FormHTMLAttributes<HTMLFormElement>;
 
-const Form: FC<FormProps> = ({ dropdowns, ...rest }) => {
-  const getAllOptions = (options?: Array<MultiLevelDropdown>) => {
-    if (!options) return null;
-    return options.map(({ id, name, children }) => {
-      return (
-        <Fragment key={id}>
-          <option value={id}>{name}</option>
-          {getAllOptions(children)}
-        </Fragment>
-      );
-    });
-  };
-
+const Form: FC<FormProps> = (props) => {
   return (
-    <form className={classes.form} {...rest}>
+    <form className={classes.form} {...props}>
       <Select label="Parent" name="parent" placeholder="eg: Home Page" required>
-        {getAllOptions(dropdowns)}
+        <Options options={DROPDOWN_MENU} />
       </Select>
       <Input label="Child" name="child" placeholder="eg: Page 1" required />
       <Button type="submit">Submit</Button>

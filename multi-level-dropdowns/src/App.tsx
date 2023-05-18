@@ -11,7 +11,7 @@ const App = () => {
     <>
       <AppBar />
       <main className={classes.appMain}>
-        <Form dropdowns={DROPDOWN_MENU} />
+        <Form />
         <Menu menu={DROPDOWN_MENU} />
       </main>
     </>
