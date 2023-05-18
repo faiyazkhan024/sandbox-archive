@@ -1,10 +1,23 @@
+.nav li:has(ul) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .nav li:has(ul)::after {
-  content: "▼";
-  margin-left: 8px;
+  content: " ";
+  height: 5px;
+  width: 5px;
+  display: block;
+  border-style: solid;
+  border-color: var(--secondary-300);
+  border-width: 0px 2px 2px 0px;
+  transform: translateY(-1px) rotate(45deg);
 }
 
 .nav li:has(ul):hover::after {
-  content: "▲";
+  content: " ";
+  border-color: var(--accent);
 }
 
 .nav ul ul {
