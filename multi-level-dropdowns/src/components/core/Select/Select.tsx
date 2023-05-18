@@ -25,7 +25,11 @@ const Select: FC<SelectProps> = ({
         className={classes.select}
         {...rest}
       >
-        {placeholder && <option hidden>{placeholder}</option>}
+        {placeholder && (
+          <option value="" hidden>
+            {placeholder}
+          </option>
+        )}
         {children}
       </select>
     </label>

@@ -13,7 +13,7 @@
   font-size: 1.2rem;
   font-weight: 400;
   border: 1px solid var(--secondary-700);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   appearance: none;
   background-image: var(--arrow-down);
   background-repeat: no-repeat;
@@ -25,4 +25,12 @@
   outline: none;
   border: 1px solid var(--accent);
   box-shadow: 0 0 10px 0 var(--accent);
+}
+
+.select:invalid {
+  color: var(--secondary);
+}
+
+.select option {
+  color: var(--secondary-700);
 }

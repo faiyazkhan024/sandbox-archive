@@ -2,13 +2,13 @@
   padding: 0.5rem 1.5rem;
   font-size: 1.2rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   color: var(--secondary-100);
   background-color: var(--accent);
 }
 
 .btn:hover {
-  box-shadow: 0 10px 15px -3px var(--secondary), 0 4px 6px -4px var(--secondary);
+  box-shadow: 0 4px 6px -1px var(--secondary), 0 2px 4px -2px var(--secondary);
 }
 
 .btn:active {
