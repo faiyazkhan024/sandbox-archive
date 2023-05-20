@@ -21,4 +21,5 @@ const SubMenu: FC<SubMenuProps> = ({ menu }) => {
     </List>
   );
 };
+
 export default SubMenu;

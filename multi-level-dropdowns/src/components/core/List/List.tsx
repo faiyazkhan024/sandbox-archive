@@ -11,4 +11,5 @@ const List: FC<ListProps> = ({ children, ...rest }) => {
     </ul>
   );
 };
+
 export default List;
