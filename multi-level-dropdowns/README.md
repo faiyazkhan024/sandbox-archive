@@ -72,17 +72,27 @@ To install the Multi-Level Dropdowns project, clone the sandbox repository to yo
 
   This will start a local server at <http://localhost:5000> where you can preview the production build of the project.
 
+- **To run the linting process, run the following command:**
+
+  ```bash
+  npm run lint
+  ```
+
+  This command will execute the code linting process to check for errors, style inconsistencies, and code quality issues in your project.
+
 ## Project Structure
 
-The project is structured as follows:
+The project structure consists of the following directories:
 
-- `public/`: Contains the public files and any other static assets.
-- `src/`: Contains the source code for the project.
-  - `assets/`: Contains the images, fonts, and other assets used in the project.
-  - `components/`: Contains the React components used in the project.
-  - `pages/`: Contains the top-level React components that represent each page of the app.
-  - `data/`: Contains the default data for the application.
-  - `reducer/`: Contains the reducer functions.
+- `public/`: Contains public files and static assets.
+- `src/`: Contains the project's source code.
+  - `assets/`: Contains images, fonts, and other project assets.
+  - `components/`: Contains React components.
+  - `contexts/`: Contains context and provider components.
+  - `data/`: Contains default state and data for the project.
+  - `hooks/`: Contains custom hooks.
+  - `interfaces/`: Contains custom interfaces.
+  - `pages/`: Contains top-level React components representing each app page.
 
 ## Deployment
 
@@ -114,6 +124,7 @@ If you encounter any issues while using the Multi-Level Dropdowns project, try t
 - **[ReactJS](https://react.dev/)**: is a popular JavaScript library for building user interfaces. It provides a declarative syntax for describing the UI and a component-based architecture for organizing code.
 - **[Typescript](https://www.typescriptlang.org/)**: is a superset of JavaScript that adds type annotations to the language. It provides better type checking and code analysis than plain JavaScript, and can help catch errors before they occur at runtime.
 - **[CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)**: is a system for modularizing CSS code, which makes it easier to manage and reuse. It allows you to write CSS code that is scoped to a particular component, so that it doesn't conflict with other CSS styles.
+- **[Context API](https://react.dev/reference/react/createContext)**: is a react's built-in feature for managing global state and sharing data between components. You can create context and provider components in the contexts/ directory to facilitate global state management in your project.
 
 ## Configuration
 
