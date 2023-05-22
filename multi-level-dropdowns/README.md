@@ -92,7 +92,6 @@ The project structure consists of the following directories:
   - `data/`: Contains default state and data for the project.
   - `hooks/`: Contains custom hooks.
   - `interfaces/`: Contains custom interfaces.
-  - `pages/`: Contains top-level React components representing each app page.
 
 ## Deployment
 

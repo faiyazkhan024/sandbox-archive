@@ -23,3 +23,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: var(--primary-300);
 }
+
+.main {
+  margin: 2.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}

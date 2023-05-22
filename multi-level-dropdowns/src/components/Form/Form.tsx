@@ -1,4 +1,4 @@
-import { FC, FormHTMLAttributes } from "react";
+import { FC, FormEvent } from "react";
 
 import Options from "./Options";
 import Input from "../core/Input";
@@ -8,13 +8,19 @@ import useMenu from "../../hooks/useMenu";
 
 import classes from "./Form.module.css";
 
-type FormProps = FormHTMLAttributes<HTMLFormElement>;
+const Form: FC = () => {
+  const { menu, addMenu } = useMenu();
 
-const Form: FC<FormProps> = (props) => {
-  const { menu } = useMenu();
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+    const { parent, child } = event.target as HTMLFormElement;
+    addMenu?.({ parentID: parent.value, name: child.value });
+    child.value = "";
+    parent.value = "";
+  };
 
   return (
-    <form className={classes.form} {...props}>
+    <form className={classes.form} onSubmit={handleSubmit}>
       <Select label="Parent" name="parent" placeholder="eg: Home Page" required>
         <Options options={menu} />
       </Select>

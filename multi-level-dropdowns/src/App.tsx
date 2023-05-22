@@ -1,14 +1,18 @@
-import Main from "./pages/Main";
 import AppBar from "./components/AppBar";
+import Form from "./components/Form";
+import Menu from "./components/Menu";
 import { MenuContextProvider } from "./contexts/MenuContext";
 
 const App = () => {
   return (
     <>
       <AppBar />
-      <MenuContextProvider>
-        <Main />
-      </MenuContextProvider>
+      <main className="main">
+        <MenuContextProvider>
+          <Form />
+          <Menu />
+        </MenuContextProvider>
+      </main>
     </>
   );
 };
