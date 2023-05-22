@@ -32,11 +32,10 @@ const menuReducer: MenuReducer = (state, action) => {
   const { type, payload } = action;
   if (type !== "add" || !payload) return state;
   const { parentID, name } = payload;
-  const newMenu = { id: v4(), name };
-  return recursiveAddMenu(state, parentID, newMenu);
+  return recursiveAddMenu(state, parentID, { id: v4(), name });
 };
 
-const MenuContext = createContext<MC>({});
+const MenuContext = createContext<MC>({ menu: initialState });
 
 export const MenuContextProvider: MCP = ({ children }) => {
   const [menu, dispatch] = useReducer(menuReducer, initialState);

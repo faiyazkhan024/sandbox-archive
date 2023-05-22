@@ -12,14 +12,12 @@ export interface MenuPayload {
   parentID: string;
 }
 
-interface MenuAction {
-  type: string;
-  payload?: MenuPayload;
-}
-
 export type MenuReducer = (
-  state: MultiLevelDropdown[],
-  action: MenuAction
+  state: Array<MultiLevelDropdown>,
+  action: {
+    type: string;
+    payload?: MenuPayload;
+  }
 ) => Array<MultiLevelDropdown>;
 
 export type RecursiveAddMenu = (
