@@ -1,0 +1,32 @@
+.postContainer {
+  width: 60%;
+  margin: auto;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1366px) {
+  .postContainer {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .postContainer {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .postContainer {
+    padding: 0.3rem 0.5rem;
+  }
+}

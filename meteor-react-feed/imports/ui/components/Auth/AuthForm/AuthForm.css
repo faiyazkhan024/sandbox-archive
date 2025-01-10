@@ -1,0 +1,41 @@
+.authForm {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.authForm .authInput {
+  height: 4rem;
+  font-size: 1.2rem;
+  background-color: var(--light_grey);
+  border: none;
+  transition: 0.5s ease-in-out all;
+}
+
+.authForm .authInput:focus {
+  background-color: var(--white);
+  box-shadow: 0 0 1rem 1px var(--light_grey);
+}
+
+.authForm .authBtn {
+  height: 4rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+}
+
+.authForm .authBtn:hover {
+  box-shadow: 0 0 0.5rem 1px var(--primary);
+}
+
+@media screen and (max-width: 540px) {
+  .authForm .authInput {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .authForm .authBtn {
+    height: 2.5rem;
+  }
+}

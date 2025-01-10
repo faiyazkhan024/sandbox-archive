@@ -1,0 +1,43 @@
+.feedHeader {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--secondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.feedHeader h1 {
+  font-weight: normal;
+}
+
+.feedHeader .logout {
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 5px;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--error);
+}
+
+.feedHeader .logout:hover {
+  box-shadow: 0 0 1rem 1px var(--error);
+}
+
+@media screen and (max-width: 540px) {
+  .feedHeader h1 {
+    font-size: 1.3rem;
+  }
+
+  .feedHeader .logout {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 4px;
+  }
+}

@@ -1,0 +1,70 @@
+.postFormContainer {
+  padding: 0.5rem 0.8rem;
+  height: 10rem;
+  margin-top: 4.5rem;
+  position: relative;
+}
+
+.postForm {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.postForm .postInput {
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 0;
+  background: var(--white);
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem 0 var(--grey);
+}
+
+.postForm .postInput::-webkit-scrollbar {
+  display: none;
+}
+
+.postForm .postBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .postForm {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .postForm {
+    width: 100%;
+  }
+
+  .postForm .postInput {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .postFormContainer {
+    margin-top: 2.5rem;
+  }
+
+  .postForm .postInput {
+    font-size: 0.8rem;
+  }
+
+  .postForm .postBtn {
+    font-size: 0.8rem;
+    height: 1.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "meteor-react-feed",
+  "private": true,
+  "scripts": {
+    "start": "MONGO_URL='mongodb://admin:admin@mrf-shard-00-00.ddocs.mongodb.net:27017,mrf-shard-00-01.ddocs.mongodb.net:27017,mrf-shard-00-02.ddocs.mongodb.net:27017/mrf?ssl=true&replicaSet=atlas-5vwwjm-shard-0&authSource=admin&retryWrites=true&w=majority' meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "bcrypt": "^5.0.1",
+    "formik": "^2.2.9",
+    "meteor-node-stubs": "^1.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "yup": "^0.32.9"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/index.js",
+      "server": "server/index.js"
+    },
+    "testModule": "tests/index.js"
+  }
+}
