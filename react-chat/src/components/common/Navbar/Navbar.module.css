@@ -1,0 +1,43 @@
+.Navbar {
+  background-color: var(--primary);
+  color: rgba(var(--white_rgb), 0.7);
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem 0 0 3rem;
+}
+
+.Container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NavItems {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+}
+
+.OpenNav {
+  width: 15rem;
+}
+
+.Menu:hover {
+  background: none;
+  color: var(--white);
+}
+
+.MenuTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.MenuIcon {
+  font-size: 2rem;
+}

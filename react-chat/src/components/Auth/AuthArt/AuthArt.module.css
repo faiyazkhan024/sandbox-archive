@@ -1,0 +1,38 @@
+.OuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  border-radius: 1rem 0 0 1rem;
+  background: rgba(var(--secondary_rgb), 0.5);
+}
+
+.InnerContainer {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Svg {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
+
+@media screen and (min-width: 256px) and (max-width: 512px),
+  screen and (max-aspect-ratio: 3/4),
+  screen and (aspect-ratio: 16/9) {
+  .OuterContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 512px) and (max-width: 1024px) {
+  .InnerContainer {
+    width: 80%;
+  }
+}

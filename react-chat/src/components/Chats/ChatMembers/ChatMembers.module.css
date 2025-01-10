@@ -1,0 +1,40 @@
+.Container {
+  width: 25%;
+  height: 100%;
+}
+
+.Heading {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  border-bottom: var(--primary) 2px solid;
+}
+
+.MemberList {
+  height: 85%;
+  overflow: auto;
+}
+
+.User {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.User h4 {
+  text-transform: capitalize;
+  padding-left: 2rem;
+}
+
+.Separator {
+  width: 90%;
+  height: 1px;
+  background: var(--light_grey);
+  margin: auto;
+}
+.Active {
+  color: var(--success);
+  font-size: 1.5rem;
+}

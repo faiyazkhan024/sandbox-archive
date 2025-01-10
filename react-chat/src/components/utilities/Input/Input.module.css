@@ -1,0 +1,20 @@
+.input {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0.5rem;
+  border: var(--light_grey) 1px solid;
+}
+
+.input:focus {
+  border: var(--primary) 1px solid;
+  box-shadow: 0 0 5px 0 var(--primary);
+}
+
+@media screen and (min-width: 256px) and (max-width: 512px),
+  screen and (max-aspect-ratio: 3/4),
+  screen and (aspect-ratio: 16/9) {
+  .input {
+    padding: 12px 15px;
+  }
+}

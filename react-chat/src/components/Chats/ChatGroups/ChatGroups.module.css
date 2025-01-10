@@ -1,0 +1,30 @@
+.Container {
+  width: 25%;
+  height: 100%;
+}
+
+.TopBar {
+  height: 10%;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Options {
+  display: flex;
+}
+
+.Search {
+  color: var(--grey);
+}
+
+.Add {
+  color: var(--primary);
+}
+
+.GroupList {
+  height: 85%;
+  overflow: auto;
+}

@@ -1,0 +1,51 @@
+.Header {
+  height: 5rem;
+  border-radius: 0 3rem 0 0;
+}
+
+.Container {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.Title .Icon {
+  color: var(--primary);
+}
+
+.Options {
+  display: flex;
+  align-items: center;
+}
+
+.Search {
+  margin: 0;
+  padding: 10px 15px;
+  width: 10rem;
+  background: rgba(var(--light_grey_rgb), 0.2);
+}
+
+.Options .Icon {
+  color: var(--grey);
+}
+
+.Avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.Icon {
+  font-size: 1.5rem;
+  margin: 0 1.5rem;
+}

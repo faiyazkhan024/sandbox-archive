@@ -1,0 +1,25 @@
+.IconButton {
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.IconButton:hover {
+  background: rgb(var(--secondary_rgb), 0.2);
+  color: var(--secondary);
+}
+
+.IconButton .Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.IconButton p {
+  padding: 0 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+:root {
+  --primary: #233e8b;
+  --primary_rgb: 35, 62, 139;
+  --secondary: #1eae98;
+  --secondary_rgb: 30, 174, 152;
+  --accent: #ffffc7;
+  --accent_rgb: 255, 255, 199;
+  --success: #18e444;
+  --success_rgb: 24, 228, 68;
+  --white: #fff;
+  --white_rgb: 255, 255, 255;
+  --black: #000;
+  --black_rgb: 0, 0, 0;
+  --light_grey: #ebebeb;
+  --light_grey_rgb: 235, 235, 235;
+  --grey: #828282;
+  --grey_rgb: 130, 130, 130;
+  --dark_grey: #272727;
+  --dark_grey_rgb: 39, 39, 39;
+}
+
+svg {
+  --skin: #a0616a;
+  --message_outline: #000;
+  --butterfly_inline: #fff;
+  --main_user_hair: #000;
+  --main_user_pant: #2f2e41;
+  --main_user_boot: #2f2e41;
+  --other_users_outline: #000;
+  --received_message_content: #ccc;
+  --ground: #000;
+  --window_border: #000;
+  --window_body: #f2f2f2;
+  --window_content: #e0e0e0;
+}

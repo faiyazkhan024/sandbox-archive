@@ -1,0 +1,17 @@
+.Form {
+  display: flex;
+  height: 10%;
+  align-content: center;
+  justify-content: center;
+}
+
+.Input {
+  margin-bottom: 1.2rem;
+}
+
+.IconButton {
+  font-size: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+}

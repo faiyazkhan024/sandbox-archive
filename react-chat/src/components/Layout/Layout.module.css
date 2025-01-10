@@ -1,0 +1,22 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--primary_rgb), 0.2);
+}
+
+.Layout {
+  display: flex;
+  height: 900px;
+  width: 1800px;
+  margin: 30px;
+  border-radius: 3rem;
+  background: var(--white);
+}
+
+.Main {
+  width: calc(100% - 5rem);
+  height: calc(100% - 5rem);
+}

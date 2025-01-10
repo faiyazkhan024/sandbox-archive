@@ -1,0 +1,32 @@
+.OuterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.InnerContainer {
+  width: 70%;
+}
+
+.Heading {
+  font-size: 2.5em;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 256px) and (max-width: 512px),
+  screen and (max-aspect-ratio: 3/4),
+  screen and (aspect-ratio: 16/9) {
+  .OuterContainer {
+    border-radius: 0;
+  }
+
+  .Heading {
+    font-size: 2rem;
+  }
+}

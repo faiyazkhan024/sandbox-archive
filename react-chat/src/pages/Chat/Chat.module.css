@@ -1,0 +1,13 @@
+.Container {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 1px);
+}
+
+@media screen and (min-width: 256px) and (max-width: 512px),
+  screen and (max-aspect-ratio: 3/4),
+  screen and (aspect-ratio: 16/9) {
+}
+
+@media screen and (min-width: 512px) and (max-width: 1024px) {
+}

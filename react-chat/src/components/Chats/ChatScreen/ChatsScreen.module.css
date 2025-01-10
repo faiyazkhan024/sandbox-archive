@@ -1,0 +1,31 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 1px);
+  width: 50%;
+}
+
+.ChatScreen {
+  padding: 1px 0;
+  overflow: auto;
+  flex: auto;
+}
+
+.RoomName {
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+
+.RoomName h1 {
+  padding: 4rem;
+  font-weight: 500;
+}
+
+.ScrollToBottom {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: var(--secondary);
+}

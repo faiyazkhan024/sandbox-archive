@@ -1,0 +1,40 @@
+.Button {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 20px;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background-color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.Button:hover {
+  box-shadow: 0 0 10px 0 var(--primary);
+}
+
+.Button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.Button:disabled {
+  cursor: not-allowed;
+  background: var(--light_grey);
+  color: var(--black);
+}
+
+.Button:disabled:hover {
+  box-shadow: 0 0 10px 0 var(--grey);
+}
+
+@media screen and (min-width: 256px) and (max-width: 512px),
+  screen and (max-aspect-ratio: 3/4),
+  screen and (aspect-ratio: 16/9) {
+  .Button {
+    padding: 15px;
+  }
+}
